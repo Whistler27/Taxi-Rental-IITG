@@ -12,6 +12,9 @@ def index(request):
 def info(request):
     return render(request,'taxi/info.html')
 
+def dashboard(request):
+    return render(request,'taxi/dashboard.html')
+
 def contact(request):
     thank = False
     if request.method == 'POST':
