@@ -1,6 +1,6 @@
 app_id: "fd1f4c28-aebc-426d-91f2-7a46bc120e4c"
 app_secret: "seq-J_Lyf3L-XPFf_fjT7RwJcWw6w1Mo~4"
-redirect: "http://localhost:8000/taxi/"
+redirect: "http://localhost:8000/taxi/dashboard/"
 scopes: "openid profile offline_access user.read calendars.read"
 authority: "https://login.microsoftonline.com/common"
 authorize_endpoint: "/oauth2/v2.0/authorize"

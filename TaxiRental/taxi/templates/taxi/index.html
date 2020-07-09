@@ -6,34 +6,82 @@
 <header class="w3-display-container w3-content" style="max-width:1500px;">
     <img class="campus" src='{% static "taxi/campus.jpg" %}' alt="Campus" style="min-width:1000px" width="1500"
         height="800">
-    <div class="w3-display-left w3-padding w3-col 20 m16">
-        <div class="w3-container w3-red">
-            <h2><i class="fa fa-car w3-margin-right"></i>Rent a taxi for your ride</h2>
-        </div>
-        <div class="w3-container w3-white w3-padding-16">
-            <form action="" target="_blank">
-                <div class="w3-row-padding" style="margin:0 -16px;">
-                    <div class="w3-half w3-margin-bottom">
-                        <label>Source</label>
-                        <input class="w3-input w3-border" type="text" value="IIT Guwahati Campus" name="Source" readonly>
-                    </div>
-                    <div class="w3-half">
-                        <label>Destination</label>
-                        <select class="w3-input w3-border" id="Destination">
-                            <option>Panbazaar</option>
-                            <option>Jalukbari</option>
-                            <option>Airport</option>
-                            <option>PaltanBazaar</option>
-                            <option>GS Road</option>
-                            <option>Maligaon</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i>
-                    Search availability</button>
-            </form>
-        </div>
-    </div>
+
+    <h1 style="text-align:center">IIT Guwahati Taxi Fare Chart</h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="text-center">
+                    Panbazaar
+                </th>
+                <th class="text-center">
+                    Jalukbari
+                </th>
+                <th class="text-center">
+                    Airport
+                </th>
+                <th class="text-center">
+                    Paltanbazaar
+                </th>
+                <th class="text-center">
+                    GS Road
+                </th>
+                <th class="text-center">
+                    Maligaon
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="text-nowrap" scope="row">Swift Dzire</th>
+                <td style="text-align:center">₹ 200</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 450</td>
+                <td style="text-align:center">₹ 280</td>
+                <td style="text-align:center">₹ 240</td>
+                <td style="text-align:center">₹ 200</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Maruti Alto</th>
+                <td style="text-align:center">₹ 200</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 400</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 350</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Carpool</th>
+                <td style="text-align:center">₹ 100</td>
+                <td style="text-align:center">₹ 250</td>
+                <td style="text-align:center">₹ 290</td>
+                <td style="text-align:center">₹ 150</td>
+                <td style="text-align:center">₹ 150</td>
+                <td style="text-align:center">₹ 200</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Innova</th>
+                <td style="text-align:center">₹ 200</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 550</td>
+                <td style="text-align:center">₹ 300</td>
+                <td style="text-align:center">₹ 250</td>
+                <td style="text-align:center">₹ 350</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Indica</th>
+                <td style="text-align:center">₹ 200</td>
+                <td style="text-align:center">₹ 250</td>
+                <td style="text-align:center">₹ 450</td>
+                <td style="text-align:center">₹ 350</td>
+                <td style="text-align:center">₹ 300</td>
+                <td style="text-align:center">₹ 190</td>
+            </tr>
+        </tbody>
+    </table>
+
 </header>
 
 <!-- Page content -->
@@ -43,10 +91,12 @@
         <div class="w3-col 25 12">
             <h2><u>About :</u></h2>
             <h4><b> This is the official taxi rental website which can be used exclusively by IIT Guwahati students.
-                        This web app is aimed at making life of the students simpler and avoiding last minute hassles in booking rides for destinations especially like Airport,Railway Station.
-                        Students can get discounts on rides.
-                        We accept payment through PayTM only.</b></h4>
-            <p><h3><u> We accept: </u></h3><img src='{% static "taxi/paytm.png" %}'></p>
+                    This web app is aimed at making life of the students simpler and avoiding last minute hassles in
+                    booking rides for destinations especially like Airport,Railway Station.
+                    Students can get discounts on rides.
+                    We accept payment through PayTM only.</b></h4>
+            <p>
+            <h3><u> We accept: </u></h3><img src='{% static "taxi/paytm.png" %}'></p>
         </div>
     </div>
 
@@ -56,37 +106,37 @@
     </div>
 
     <div class="w3-container">
-        <h2>Our Team</h2>
-        <h4><b>You can connect with them through Facebook</b></h4>
+        <h2 style="text-align: center;">Our Team</h2>
+        <h4 style="text-align: center"><b>You can connect with them through Facebook</b></h4>
     </div>
     <br>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="panel panel-danger">
                     <div class="panel-heading"><strong>Adriraj Chaudhuri</strong></div>
                     <div class="panel-body"><img src='{% static "taxi/adriraj.jpg" %}' class="img-responsive"
                             style="width:100%" alt="Image"></div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="panel panel-danger">
-                    <div class="panel-heading"><strong>Naman Goyal</strong></div>
-                    <div class="panel-body"><img src='{% static "taxi/naman.jpg" %}' class="img-responsive"
-                            style="width:100%" alt="Image"></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="panel panel-danger">
                     <div class="panel-heading"><strong>Souvik Paul</strong></div>
                     <div class="panel-body"><img src='{% static "taxi/souvik.jpg" %}' class="img-responsive"
                             style="width:100%" alt="Image"></div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading"><strong>Naman Goyal</strong></div>
+                    <div class="panel-body"><img src='{% static "taxi/naman.jpg" %}' class="img-responsive"
+                            style="width:100%" alt="Image"></div>
+                </div>
+            </div>
+
         </div>
     </div>
     <br>
 </div>
 {% endblock %}
-
